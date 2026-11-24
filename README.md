@@ -3,12 +3,23 @@
 A command-line script that detects faces with MediaPipe and blurs them.
 
 ## Usage (from the script's arguments, not tested)
-Image: python "FACE BLUR.py" --mode image --filePath path/to/image.jpg
-  Saves output/output.png
-Video: python "FACE BLUR.py" --mode video --filePath path/to/video.mp4
-  Saves output/output.mp4 (written at a fixed 25 fps, frames only)
-Webcam: python "FACE BLUR.py" --mode webcam
-  Live preview. Webcam is the default mode.
+Image (saves output/output.png):
+
+```
+python "FACE BLUR.py" --mode image --filePath path/to/image.jpg
+```
+
+Video (saves output/output.mp4, written at a fixed 25 fps, frames only):
+
+```
+python "FACE BLUR.py" --mode video --filePath path/to/video.mp4
+```
+
+Webcam (live preview, and the default mode):
+
+```
+python "FACE BLUR.py" --mode webcam
+```
 
 The ./output folder is created in the folder you run the script from.
 
